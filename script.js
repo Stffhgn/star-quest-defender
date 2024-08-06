@@ -3,17 +3,17 @@ const context = canvas.getContext('2d');
 
 // Load the spaceship images
 const ballImage = new Image();
-ballImage.src = 'C:/Users/steff/OneDrive/Desktop/MiniGame/spaceShip.png';
+ballImage.src = 'spaceShip.png';
 const ballImageWithStar = new Image();
-ballImageWithStar.src = 'C:/Users/steff/OneDrive/Desktop/MiniGame/spaceShipWithStar.png';
+ballImageWithStar.src = 'spaceShipWithStar.png';
 
 // Load the enemy spaceship image
 const enemyImage = new Image();
-enemyImage.src = 'C:/Users/steff/OneDrive/Desktop/MiniGame/enemyShip.png';
+enemyImage.src = 'enemyShip.png';
 
 // Load the goal image
 const goalImage = new Image();
-goalImage.src = 'C:/Users/steff/OneDrive/Desktop/MiniGame/goal.png';
+goalImage.src = 'goal.png';
 
 ballImage.onload = function () {
     console.log('Image loaded successfully');
