@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Star Quest: Defender's Challenge</title>
+    <style>
+        #landingPage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #gameCanvas {
+            display: none;
+            border: 1px solid #000000;
+        }
+
+        #howToPlay {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ffffff;
+            padding: 10px;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <div id="landingPage">
+        <h1>Welcome to Star Quest: Defender's Challenge</h1>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="showHowToPlay()">How to Play</button>
+    </div>
+    <div id="howToPlay">
+        <h2>How to Play</h2>
+        <p>Use arrow keys to move the blue ball.</p>
+        <p>Collect the star and bring it to the goal to score points.</p>
+        <p>Avoid enemies. Shooting enemies reduces their health.</p>
+        <p>Score as many points as possible!</p>
+        <button onclick="closeHowToPlay()">Close</button>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
